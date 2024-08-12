@@ -17,10 +17,10 @@ import {EventData2} from "./event-data";
 //}
 
 //file1
-function App(){
-  return <Button/>
-}
-export default App
+//function App(){
+//  return <Button/>
+//}
+//export default App
 
 //file2
 //export default function App(){
@@ -28,6 +28,6 @@ export default App
 //}
 
 //file3
-//export default function App() {
-//  return <EventData2/>
-//}
+export default function App() {
+  return <EventData2/>
+}
