@@ -4,6 +4,7 @@ import Calendar from './class-components'
 import Button from "./class-components";
 import {Calculator2} from "./calculator";
 import {EventData2} from "./event-data";
+import RefsFunc from './refs-func';
 
 //export default function App(){
 //  return(
@@ -16,11 +17,11 @@ import {EventData2} from "./event-data";
 //  )
 //}
 
-//file1
-//function App(){
+// file1
+// function App(){
 //  return <Button/>
-//}
-//export default App
+// }
+// export default App
 
 //file2
 //export default function App(){
@@ -28,6 +29,11 @@ import {EventData2} from "./event-data";
 //}
 
 //file3
-export default function App() {
-  return <EventData2/>
-}
+// export default function App() {
+//   return <EventData2/>
+// }
+
+//refs-func
+// export default function App(){
+//   return <RefsFunc/>
+// }
