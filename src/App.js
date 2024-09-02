@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Header,Content,Footer } from './func-components'
 import Calendar from './class-components'
 import Button from "./class-components";
@@ -6,6 +6,9 @@ import {Calculator2} from "./calculator";
 import {EventData2} from "./event-data";
 import RefsFunc from './refs-func';
 import MessageBox from './state-func';
+import { userContext } from './context';
+import Header2 from './context-header2'
+import Content2 from './context-content2'
 
 //export default function App(){
 //  return(
@@ -40,6 +43,16 @@ import MessageBox from './state-func';
 // }
 
 //State
+//export default function App(){
+//  return <MessageBox/>
+//}
+
 export default function App(){
-  return <MessageBox/>
+  let[user,setUser] = useState()
+  return(
+    <userContext.Provider value={[user,setUser]}>
+      <Header2/>
+      <Content2/>
+    </userContext.Provider>
+  )
 }
