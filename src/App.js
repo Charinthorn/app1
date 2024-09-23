@@ -9,6 +9,8 @@ import MessageBox from './state-func';
 import { userContext } from './context';
 import Header2 from './context-header2'
 import Content2 from './context-content2'
+import Router2 from './router2';
+import Router3 from './router3';
 
 //export default function App(){
 //  return(
@@ -21,38 +23,23 @@ import Content2 from './context-content2'
 //  )
 //}
 
-// file1
-// function App(){
-//  return <Button/>
-// }
-// export default App
-
-//file2
-//export default function App(){
-// return <Calculator2/>
-//}
-
-//file3
-// export default function App() {
-//   return <EventData2/>
-// }
-
-//refs-func
-// export default function App(){
-//   return <RefsFunc/>
-// }
-
-//State
-//export default function App(){
-//  return <MessageBox/>
-//}
-
+//file1,2,3,refs-func,State,router2
 export default function App(){
-  let[user,setUser] = useState()
-  return(
-    <userContext.Provider value={[user,setUser]}>
-      <Header2/>
-      <Content2/>
-    </userContext.Provider>
-  )
+//   return <Button/>
+//   return <Calculator2/>
+//   return <EventData2/>
+//   return <RefsFunc/>
+//   return <MessageBox/>
+     return <Router3/>
 }
+
+// export default function App(){
+//   let[user,setUser] = useState()
+//   return(
+//     <userContext.Provider value={[user,setUser]}>
+//       <Header2/>
+//       <Content2/>
+//     </userContext.Provider>
+//   )
+// }
+
